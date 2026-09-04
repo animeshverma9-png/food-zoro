@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery & Quality Standards - CaterPlatform</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Strip -->
+  <div class="announcement-strip">
+    <div class="ticker-content">
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+      <div class="ticker-item"><i class="fa-solid fa-bolt"></i> Instant Bulk Customization & Live Cost</div>
+      <div class="ticker-item"><i class="fa-solid fa-truck-fast"></i> Guaranteed On-Time Warm Delivery</div>
+
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+      <div class="ticker-item"><i class="fa-solid fa-bolt"></i> Instant Bulk Customization & Live Cost</div>
+      <div class="ticker-item"><i class="fa-solid fa-truck-fast"></i> Guaranteed On-Time Warm Delivery</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-themed">
+          <div class="swordsman-badge">
+            <i class="fa-solid fa-burst aura-pulse"></i>
+            <div class="katana-icon-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-text"><span class="logo-red">Cater</span><span class="logo-dark">Platform</span></span>
+            <span class="katana-slash-line"></span>
+          </div>
+        </a>
+
+        <!-- Location Dropdown Picker -->
+        <div class="location-pill" id="locationToggle">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="location-info">
+            <span class="loc-label">DELIVER TO</span>
+            <span class="loc-city" id="selectedCityText">Noida <i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <ul class="dropdown-menu" id="cityDropdown">
+            <li data-city="Noida">Noida</li>
+            <li data-city="Greater Noida">Greater Noida</li>
+            <li data-city="Delhi NCR">Delhi NCR</li>
+            <li data-city="Gurgaon">Gurgaon</li>
+            <li data-city="Ghaziabad">Ghaziabad</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Center Navigation Links -->
+      <nav class="nav-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="packages.html" class="nav-link">Meal Boxes</a>
+        <a href="gallery.html" class="nav-link highlight">Gallery</a>
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-right">
+        <a href="cart.html" class="cart-icon-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+        <div class="user-pill">
+          <i class="fa-regular fa-circle-user"></i>
+          <div class="user-text">
+            <span class="greeting">Hi Guest</span>
+            <span class="auth-action">Login / Sign Up</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="gallery-hero">
+    <div class="gallery-hero-content">
+      <span class="badge-tag">OUR SHOWCASE</span>
+      <h1 class="page-title">Experience Premium Catering</h1>
+      <p class="page-subtitle">Take a visual tour of our culinary craftsmanship, innovative leak-proof packaging, and real celebrations from happy hosts.</p>
+    </div>
+  </section>
+
+  <div class="gallery-page-container">
+    
+    <div class="gallery-nav-bar">
+      <a href="#packaging-section" class="g-nav-btn active"><i class="fa-solid fa-box-open"></i> Our Packaging</a>
+      <a href="#food-section" class="g-nav-btn"><i class="fa-solid fa-bowl-food"></i> Our Food</a>
+      <a href="#testimonials-section" class="g-nav-btn"><i class="fa-solid fa-comments"></i> Testimonials</a>
+    </div>
+
+    <section id="packaging-section" class="gallery-block">
+      <div class="section-heading">
+        <span class="sec-label">INNOVATION & HYGIENE</span>
+        <h2>Smart & Airtight Packaging</h2>
+        <p>Engineered to lock in heat, aroma, and prevent accidental spillage during transit.</p>
+      </div>
+
+      <div class="packaging-grid">
+        <div class="pkg-card">
+          <div class="pkg-image-box">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Leak-Proof Compartments" />
+            <span class="pkg-badge"><i class="fa-solid fa-droplet-slash"></i> Spill Proof</span>
+          </div>
+          <div class="pkg-card-body">
+            <h3>Multi-Compartment Bento Trays</h3>
+            <p>Individual air-sealed deep slots that prevent gravies, rice, and crisp appetizers from mixing together.</p>
+          </div>
+        </div>
+
+        <div class="pkg-card">
+          <div class="pkg-image-box">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" alt="Thermal Insulation Box" />
+            <span class="pkg-badge"><i class="fa-solid fa-temperature-arrow-up"></i> Thermal Lock</span>
+          </div>
+          <div class="pkg-card-body">
+            <h3>NinjaBox Thermal Insulation</h3>
+            <p>Double-walled food-grade outer corrugated casings that maintain piping-hot food temperature for up to 3 hours.</p>
+          </div>
+        </div>
+
+        <div class="pkg-card">
+          <div class="pkg-image-box">
+            <img src="https://images.unsplash.com/photo-1584905066893-7d5c142ba4e1?auto=format&fit=crop&w=800&q=80" alt="Cutlery and Sanitized Kit" />
+            <span class="pkg-badge"><i class="fa-solid fa-shield-virus"></i> 100% Sanitized</span>
+          </div>
+          <div class="pkg-card-body">
+            <h3>Complete Tableware Kit</h3>
+            <p>Every box comes equipped with sealed biodegradable cutlery, toothpicks, mouth freshener, and wet wipes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="food-section" class="gallery-block">
+      <div class="section-heading">
+        <span class="sec-label">AUTHENTIC TASTE</span>
+        <h2>Our Culinary Spread</h2>
+        <p>Prepared by master chefs using pure, premium ingredients with zero compromise on authentic taste.</p>
+      </div>
+
+      <div class="food-gallery-grid">
+        <div class="food-card">
+          <div class="food-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80" alt="Rich Dal Makhani" />
+            <div class="food-overlay">
+              <span class="food-tag">Main Course</span>
+              <h4>Signature Dal Makhani</h4>
+              <p>Slow cooked overnight with rich white butter and fresh cream.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80" alt="Kadhai Paneer Special" />
+            <div class="food-overlay">
+              <span class="food-tag">Chef's Choice</span>
+              <h4>Fresh Kadhai Paneer</h4>
+              <p>Tender cottage cheese tossed in freshly pounded coriander spices.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Dum Biryani Platter" />
+            <div class="food-overlay">
+              <span class="food-tag">Rice Specialties</span>
+              <h4>Royal Dum Biryani</h4>
+              <p>Long grain basmati layered with aromatic saffron and herbs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-img-wrap">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80" alt="Crispy Paneer Starters" />
+            <div class="food-overlay">
+              <span class="food-tag">Appetizers</span>
+              <h4>Dahi Ke Sholey</h4>
+              <p>Crispy golden outer crust packed with velvety spiced hung curd.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-img-wrap">
+            <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=800&q=80" alt="Artisanal Breads & Kulchas" />
+            <div class="food-overlay">
+              <span class="food-tag">Breads</span>
+              <h4>Butter Naan & Kulchas</h4>
+              <p>Tandoor-baked fresh fluffy breads glazed with salted butter.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-img-wrap">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80" alt="Gajar Ka Halwa Desserts" />
+            <div class="food-overlay">
+              <span class="food-tag">Desserts</span>
+              <h4>Shahi Gajar Ka Halwa</h4>
+              <p>Simmered in pure desi ghee, khoya, and roasted crunchy cashews.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials-section" class="gallery-block">
+      <div class="section-heading">
+        <span class="sec-label">CLIENT LOVE</span>
+        <h2>What Our Customers Say</h2>
+        <p>Real experiences from house party hosts, corporate coordinators, and wedding planners.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-header">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="event-badge">Birthday Party (40 Guests)</span>
+          </div>
+          <p class="testi-quote">
+            "The NinjaBox format was a massive hit at my house party! No dirty dishes, no buffet mess, and the Dal Makhani was piping hot even 2 hours after delivery."
+          </p>
+          <div class="testi-user">
+            <div class="user-avatar">VK</div>
+            <div class="user-info">
+              <h4>Vikas Kapoor</h4>
+              <span>Sector 62, Noida • Verified Order</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-header">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="event-badge">Corporate Lunch (120 Guests)</span>
+          </div>
+          <p class="testi-quote">
+            "We ordered bulk meal boxes for our quarterly office summit. On-time delivery, premium sealed boxes, and crisp cutlery packs. Outstanding professionalism!"
+          </p>
+          <div class="testi-user">
+            <div class="user-avatar">PS</div>
+            <div class="user-info">
+              <h4>Pooja Sharma</h4>
+              <span>Knowledge Park, Greater Noida • HR Lead</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-header">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="event-badge">Family Gathering (25 Guests)</span>
+          </div>
+          <p class="testi-quote">
+            "The portions were very generous. Dahi ke sholey and Kadhai Paneer were delicious. Catering simplified to perfection without any headache."
+          </p>
+          <div class="testi-user">
+            <div class="user-avatar">RM</div>
+            <div class="user-info">
+              <h4>Rohit Mathur</h4>
+              <span>Indirapuram, Ghaziabad • Verified Order</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo footer-logo">
+          <span class="logo-red">Cater</span><span class="logo-white">Platform</span>
+        </a>
+        <p class="footer-text">
+          Delivering hygienic, premium quality portioned catering meal boxes and custom event banquets straight to your doorstep.
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Our Services</h4>
+        <ul class="footer-menu">
+          <li><a href="packages.html">Ninja Meal Box</a></li>
+          <li><a href="packages.html">Buffet Catering</a></li>
+          <li><a href="packages.html">Snack Platters</a></li>
+          <li><a href="packages.html">Corporate Catering</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Quick Links</h4>
+        <ul class="footer-menu">
+          <li><a href="gallery.html">Packaging & Quality</a></li>
+          <li><a href="packages.html">Pricing Calculator</a></li>
+          <li><a href="gallery.html#testimonials-section">Customer Reviews</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Contact & Support</h4>
+        <p class="contact-line"><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p class="contact-line"><i class="fa-solid fa-envelope"></i> support@caterplatform.com</p>
+        <p class="contact-line"><i class="fa-solid fa-location-dot"></i> Noida & Greater Noida, NCR</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CaterPlatform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

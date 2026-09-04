@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Meal Packages - FOODZORO BY PARTY PEHNAWA</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/packages.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Strip -->
+  <div class="announcement-strip">
+    <div class="ticker-content">
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+      <div class="ticker-item"><i class="fa-solid fa-bolt"></i> Instant Bulk Customization & Live Cost</div>
+      <div class="ticker-item"><i class="fa-solid fa-truck-fast"></i> Guaranteed On-Time Warm Delivery</div>
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-themed">
+          <div class="swordsman-badge">
+            <i class="fa-solid fa-burst aura-pulse"></i>
+            <div class="katana-icon-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-text"><span class="logo-red">FOOD</span><span class="logo-dark">ZORO</span></span>
+            <span class="sub-brand-tag">BY PARTY PEHNAWA</span>
+            <span class="katana-slash-line"></span>
+          </div>
+        </a>
+
+        <!-- Location Dropdown Picker -->
+        <div class="location-pill" id="locationToggle">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="location-info">
+            <span class="loc-label">DELIVER TO</span>
+            <span class="loc-city" id="selectedCityText">Noida <i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <ul class="dropdown-menu" id="cityDropdown">
+            <li data-city="Noida">Noida</li>
+            <li data-city="Greater Noida">Greater Noida</li>
+            <li data-city="Delhi NCR">Delhi NCR</li>
+            <li data-city="Gurgaon">Gurgaon</li>
+            <li data-city="Ghaziabad">Ghaziabad</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="nav-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="packages.html" class="nav-link highlight active-page">Meal Boxes</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="cart.html" class="cart-icon-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+        <div class="user-pill">
+          <i class="fa-regular fa-circle-user"></i>
+          <div class="user-text">
+            <span class="greeting">Hi Guest</span>
+            <span class="auth-action">Login / Sign Up</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="boxes-cover-section">
+    <div class="cover-backdrop">
+      <div class="cover-content">
+        <div class="vibe-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> 100% Pure Veg Master Menu</div>
+        <h1 class="cover-title">Curated <span class="gradient-text">Food Zoro</span> Packages</h1>
+        <p class="cover-desc">Select from our chef-crafted packages or build your own customized spread directly from our master kitchen menu.</p>
+        
+        <div class="diet-filter-wrapper">
+          <button class="filter-tab active" data-filter="veg"><i class="fa-solid fa-circle-check"></i> Pure Veg Packages</button>
+          <button class="filter-tab nonveg-tab" data-filter="nonveg"><i class="fa-solid fa-drumstick-bite"></i> Non-Veg Special</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="packages-container">
+    <div id="packagesMainContent">
+      <div class="packages-grid">
+
+        <!-- Package 1: Zoro Mix -->
+        <article class="box-card" data-package-id="pkg-1" data-base-price="299">
+          <div class="box-image-wrap">
+            <img src="images/zoromix.png" alt="Zoro Mix - ₹299/- Onwards" />
+            <span class="badge-accent red">Bestseller</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Mix (Package 1)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+            </div>
+            <p class="box-summary">3 Snacks (Tandoori/Chinese/Continental) + 1 Noodles + 1 Fried Rice + 1 Dessert.</p>
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-fire"></i> 3 Snacks</span>
+              <span><i class="fa-solid fa-bowl-rice"></i> Noodles + Rice</span>
+              <span><i class="fa-solid fa-cake-candles"></i> Dessert</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Starting Price</span>
+                <span class="price-val">₹<span class="calculated-price">299</span> <small class="price-suffix">/ box</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 2: Zoro Snack Attack -->
+        <article class="box-card" data-package-id="pkg-2" data-base-price="289">
+          <div class="box-image-wrap">
+            <img src="images/zoro snack attack.png" alt="Zoro Snack Attack - ₹289/- Onwards" />
+            <span class="badge-accent orange">Snack Spread</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Snack Attack (Package 2)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+            </div>
+            <p class="box-summary">6 Snacks of your choice chosen freely across Tandoori, Chinese, and Continental menus.</p>
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-cookie-bite"></i> 6 Snacks</span>
+              <span><i class="fa-solid fa-bolt"></i> Party Starter</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Starting Price</span>
+                <span class="price-val">₹<span class="calculated-price">289</span> <small class="price-suffix">/ box</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 3: Zoro Wok -->
+        <article class="box-card" data-package-id="pkg-3" data-base-price="299">
+          <div class="box-image-wrap">
+            <img src="images/zoro wok.png" alt="Zoro Wok - ₹299/- Onwards" />
+            <span class="badge-accent yellow">Asian Special</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Wok (Package 3)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+            </div>
+            <p class="box-summary">3 Chinese Snacks + 2 Options from Noodles & Rice + 1 Chinese Main Course Gravy.</p>
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-pepper-hot"></i> 3 Chinese Starters</span>
+              <span><i class="fa-solid fa-bowl-rice"></i> 2 Noodles/Rice</span>
+              <span><i class="fa-solid fa-fire-burner"></i> 1 Gravy</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Starting Price</span>
+                <span class="price-val">₹<span class="calculated-price">299</span> <small class="price-suffix">/ box</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 4: Desi Zoro -->
+        <article class="box-card" data-package-id="pkg-4" data-base-price="199">
+          <div class="box-image-wrap">
+            <img src="images/desi zoro.png" alt="Desi Zoro - ₹199/- Onwards" />
+            <span class="badge-accent red">Royal Thali</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Desi Zoro (Package 4)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+            </div>
+            <p class="box-summary">3 Indian Main Course Curries + 3 Choices in Rice & Breads + 1 Royal Dessert.</p>
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-bowl-food"></i> 3 Indian Mains</span>
+              <span><i class="fa-solid fa-bread-slice"></i> 3 Breads/Rice</span>
+              <span><i class="fa-solid fa-cake-candles"></i> 1 Dessert</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Starting Price</span>
+                <span class="price-val">₹<span class="calculated-price">199</span> <small class="price-suffix">/ box</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 5: Zoro Feast -->
+        <article class="box-card" data-package-id="pkg-5" data-base-price="339">
+          <div class="box-image-wrap">
+            <img src="images/zoro feast.png" alt="Zoro Feast - ₹339/- Onwards" />
+            <span class="badge-accent orange">Signature Feast</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Feast (Package 5)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+            </div>
+            <p class="box-summary">3 Snacks + 2 Indian Main Course Items + 3 Choices in Rice and Breads + 1 Dessert.</p>
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-fire"></i> 3 Snacks</span>
+              <span><i class="fa-solid fa-bowl-food"></i> 2 Curries</span>
+              <span><i class="fa-solid fa-bread-slice"></i> 3 Breads/Rice</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Starting Price</span>
+                <span class="price-val">₹<span class="calculated-price">339</span> <small class="price-suffix">/ box</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 6: Build Your Zoro -->
+        <article class="box-card" data-package-id="pkg-6" data-base-price="249">
+          <div class="box-image-wrap">
+            <img src="images/build your zoro.png" alt="Build Your Zoro - ₹249/- Onwards" />
+            <span class="badge-accent yellow">Total Freedom</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Build Your Zoro (Package 6)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+            </div>
+            <p class="box-summary">Zero restrictions. Free choice of Bases, Mains, Sides, and Sauces from the master menu.</p>
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> Unrestricted</span>
+              <span><i class="fa-solid fa-calculator"></i> Live Costing</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Build Custom Box</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Starting Price</span>
+                <span class="price-val">₹<span class="calculated-price">249</span> <small class="price-suffix">/ box</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Non-Veg Notice Message -->
+    <div class="nonveg-empty-state" id="nonVegEmptyNotice">
+      <div class="nonveg-notice-card">
+        <div class="leaf-icon-circle"><i class="fa-solid fa-leaf"></i></div>
+        <span class="nonveg-tag">100% CERTIFIED PURE VEG</span>
+        <h2 class="nonveg-title">We don't have Non-Veg options</h2>
+        <p class="nonveg-desc">All FOODZORO kitchens and food preparations are 100% pure vegetarian.</p>
+        <button type="button" class="btn-back-to-veg" id="btnSwitchToVeg">
+          <i class="fa-solid fa-arrow-left"></i> Explore Pure Veg Packages
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Dish Selection Modal With Strict Rules Logic -->
+  <div class="menu-modal-backdrop" id="menuModalBackdrop">
+    <div class="menu-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badge-row">
+            <span class="modal-pill veg"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+            <span class="item-count-badge" id="modalRuleBadge">Selection Rules Apply</span>
+          </div>
+          <h2 class="modal-package-name" id="modalPackageTitle">Package Configurator</h2>
+          <span class="modal-package-price" id="modalPackagePrice">₹0 / box</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-instruction" id="modalInstructionText">
+          <i class="fa-solid fa-circle-info"></i> Please pick dishes strictly matching the package quota requirements below:
+        </p>
+        <div class="dish-categories-container" id="modalDishCategories"></div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-summary">
+          <span class="sel-count-label">Validation Status:</span>
+          <strong id="modalSelectedCount">Checking rules...</strong>
+        </div>
+        <button type="button" class="btn-finalize-order" id="btnFinalizeOrder" disabled>
+          <span>Lock Menu & Continue</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo footer-logo zoro-themed">
+          <div class="logo-text-group">
+            <span class="logo-text"><span class="logo-red">FOOD</span><span class="logo-white">ZORO</span></span>
+            <span class="sub-brand-tag footer-tag">BY PARTY PEHNAWA</span>
+          </div>
+        </a>
+        <p class="footer-text">India's dedicated pure-vegetarian catering platform. Fresh, hygienic meals packed hot to order.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FOODZORO BY PARTY PEHNAWA. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/packages.js"></script>
+</body>
+</html>

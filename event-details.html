@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure Your Event - CaterPlatform</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/event-details.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Strip -->
+  <div class="announcement-strip">
+    <div class="ticker-content">
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+      <div class="ticker-item"><i class="fa-solid fa-bolt"></i> Instant Bulk Customization & Live Cost</div>
+      <div class="ticker-item"><i class="fa-solid fa-truck-fast"></i> Guaranteed On-Time Warm Delivery</div>
+
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+      <div class="ticker-item"><i class="fa-solid fa-bolt"></i> Instant Bulk Customization & Live Cost</div>
+      <div class="ticker-item"><i class="fa-solid fa-truck-fast"></i> Guaranteed On-Time Warm Delivery</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-themed">
+          <div class="swordsman-badge">
+            <i class="fa-solid fa-burst aura-pulse"></i>
+            <div class="katana-icon-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-text"><span class="logo-red">Cater</span><span class="logo-dark">Platform</span></span>
+            <span class="katana-slash-line"></span>
+          </div>
+        </a>
+
+        <!-- Location Dropdown Picker -->
+        <div class="location-pill" id="locationToggle">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="location-info">
+            <span class="loc-label">DELIVER TO</span>
+            <span class="loc-city" id="selectedCityText">Noida <i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <ul class="dropdown-menu" id="cityDropdown">
+            <li data-city="Noida">Noida</li>
+            <li data-city="Greater Noida">Greater Noida</li>
+            <li data-city="Delhi NCR">Delhi NCR</li>
+            <li data-city="Gurgaon">Gurgaon</li>
+            <li data-city="Ghaziabad">Ghaziabad</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Center Navigation Links -->
+      <nav class="nav-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="packages.html" class="nav-link">Meal Boxes</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-right">
+        <a href="cart.html" class="cart-icon-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+        <div class="user-pill">
+          <i class="fa-regular fa-circle-user"></i>
+          <div class="user-text">
+            <span class="greeting">Hi Guest</span>
+            <span class="auth-action">Login / Sign Up</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Background Canvas with Ambient Warm Gradients -->
+  <div class="event-bg-wrapper">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <main class="event-details-container">
+
+      <!-- Breadcrumbs Progress Bar -->
+      <nav class="flow-steps">
+        <div class="step-node active">
+          <div class="icon-circle"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <span class="step-label">Select Event</span>
+        </div>
+        <div class="step-connector">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="step-node">
+          <div class="icon-circle"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <span class="step-label">Get Price</span>
+        </div>
+        <div class="step-connector">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="step-node">
+          <div class="icon-circle"><i class="fa-solid fa-credit-card"></i></div>
+          <span class="step-label">Payment</span>
+        </div>
+      </nav>
+
+      <!-- Selected Package Callout Ribbon -->
+      <div class="package-selected-ribbon">
+        <div class="ribbon-tag"><i class="fa-solid fa-fire"></i> CONFIGURING PACKAGE</div>
+        <h3 class="ribbon-name" id="displayPackageName">The Hustle Meal Box</h3>
+        <span class="ribbon-price" id="displayPackagePrice">Base: ₹249 / box</span>
+      </div>
+
+      <!-- Main Form Wrapper -->
+      <section class="event-card-wrapper">
+        <h1 class="form-title">Event Details</h1>
+        <p class="form-subtitle">Tell us when and where your celebration is taking place so we can keep the kitchen ready.</p>
+
+        <form id="eventDetailsForm" class="event-form-grid">
+
+          <!-- City Selection -->
+          <div class="form-group">
+            <label for="eventCity" class="form-label">
+              <i class="fa-solid fa-city label-icon red"></i> City
+            </label>
+            <div class="input-wrap">
+              <input type="text" id="eventCity" name="city" value="Noida" readonly class="input-box readonly" />
+              <i class="fa-solid fa-lock trailing-icon"></i>
+            </div>
+          </div>
+
+          <!-- Occasion Selection -->
+          <div class="form-group">
+            <label for="eventOccasion" class="form-label">
+              <i class="fa-solid fa-cake-candles label-icon orange"></i> Occasion
+            </label>
+            <div class="input-wrap select-wrap">
+              <select id="eventOccasion" name="occasion" class="input-box" required>
+                <option value="Birthday Party" selected>Birthday Party</option>
+                <option value="House Party">House Party / Get Together</option>
+                <option value="Corporate Meeting">Corporate Lunch / Meeting</option>
+                <option value="Wedding / Engagement">Wedding / Pre-Wedding</option>
+                <option value="Festival Gathering">Festival Gathering</option>
+                <option value="Other">Other Celebration</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+          <!-- Event Date -->
+          <div class="form-group">
+            <label for="eventDate" class="form-label">
+              <i class="fa-solid fa-calendar-days label-icon yellow"></i> Event Date
+            </label>
+            <div class="input-wrap">
+              <input type="date" id="eventDate" name="eventDate" class="input-box" required />
+            </div>
+          </div>
+
+          <!-- Delivery Time Slot -->
+          <div class="form-group">
+            <label for="deliveryTime" class="form-label">
+              <i class="fa-regular fa-clock label-icon red"></i> Delivery Time
+            </label>
+            <div class="input-wrap select-wrap">
+              <select id="deliveryTime" name="deliveryTime" class="input-box" required>
+                <option value="12:00 PM - 12:30 PM">12:00 PM - 12:30 PM (Lunch)</option>
+                <option value="1:00 PM - 1:30 PM">1:00 PM - 1:30 PM</option>
+                <option value="3:30 PM - 4:00 PM" selected>✓ 3:30 PM - 4:00 PM (Hi-Tea)</option>
+                <option value="7:30 PM - 8:00 PM">7:30 PM - 8:00 PM (Dinner)</option>
+                <option value="8:30 PM - 9:00 PM">8:30 PM - 9:00 PM</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+          <!-- Veg Guest Count with Stepper -->
+          <div class="form-group">
+            <label for="vegGuests" class="form-label">
+              <i class="fa-solid fa-leaf label-icon green"></i> Veg Guests
+            </label>
+            <div class="guest-counter-input">
+              <button type="button" class="btn-step dec" data-target="vegGuests">-</button>
+              <input type="number" id="vegGuests" name="vegGuests" value="10" min="5" max="500" class="input-counter" />
+              <button type="button" class="btn-step inc" data-target="vegGuests">+</button>
+            </div>
+          </div>
+
+          <!-- Non-Veg Guest Count with Stepper -->
+          <div class="form-group">
+            <label for="nonVegGuests" class="form-label">
+              <i class="fa-solid fa-drumstick-bite label-icon darkred"></i> Non-Veg Guests
+            </label>
+            <div class="guest-counter-input">
+              <button type="button" class="btn-step dec" data-target="nonVegGuests">-</button>
+              <input type="number" id="nonVegGuests" name="nonVegGuests" value="0" min="0" max="500" class="input-counter" />
+              <button type="button" class="btn-step inc" data-target="nonVegGuests">+</button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Live Summary Pill Footer -->
+        <div class="total-guests-summary">
+          <div class="summary-left">
+            <span class="total-label">Total Portion Boxes</span>
+            <span class="total-val" id="totalGuestCount">10 Boxes</span>
+          </div>
+          <div class="summary-right">
+            <span class="est-label">Estimated Base Total</span>
+            <span class="est-val" id="estimatedTotal">₹2,490</span>
+          </div>
+        </div>
+
+        <!-- Sticky Form Action Trigger -->
+        <div class="form-action-footer">
+          <button type="submit" form="eventDetailsForm" class="btn-customize-menu">
+            Customize Menu <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo footer-logo">
+          <span class="logo-red">Cater</span><span class="logo-white">Platform</span>
+        </a>
+        <p class="footer-text">
+          Delivering hygienic, premium quality portioned catering meal boxes straight to your doorstep.
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Our Services</h4>
+        <ul class="footer-menu">
+          <li><a href="packages.html">Meal Boxes</a></li>
+          <li><a href="packages.html">Party Platters</a></li>
+          <li><a href="gallery.html">Packaging Demo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Quick Links</h4>
+        <ul class="footer-menu">
+          <li><a href="gallery.html">Quality Showcase</a></li>
+          <li><a href="gallery.html#testimonials-section">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Contact & Support</h4>
+        <p class="contact-line"><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p class="contact-line"><i class="fa-solid fa-envelope"></i> orders@caterplatform.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CaterPlatform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/event-details.js"></script>
+</body>
+</html>

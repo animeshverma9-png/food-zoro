@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOODZORO BY PARTY PEHNAWA - India's First Pure Veg Online Catering Platform</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Strip -->
+  <div class="announcement-strip">
+    <div class="ticker-content">
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+      <div class="ticker-item"><i class="fa-solid fa-bolt"></i> Instant Bulk Customization & Live Cost</div>
+      <div class="ticker-item"><i class="fa-solid fa-truck-fast"></i> Guaranteed On-Time Warm Delivery</div>
+      <div class="ticker-item"><i class="fa-solid fa-leaf"></i> 100% Certified Pure Veg Kitchen</div>
+      <div class="ticker-item"><i class="fa-solid fa-box-open"></i> Spill-Proof Airtight Packaging</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-themed">
+          <div class="swordsman-badge">
+            <i class="fa-solid fa-burst aura-pulse"></i>
+            <div class="katana-icon-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-text"><span class="logo-red">FOOD</span><span class="logo-dark">ZORO</span></span>
+            <span class="sub-brand-tag">BY PARTY PEHNAWA</span>
+            <span class="katana-slash-line"></span>
+          </div>
+        </a>
+
+        <!-- Location Dropdown Picker -->
+        <div class="location-pill" id="locationToggle">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="location-info">
+            <span class="loc-label">DELIVER TO</span>
+            <span class="loc-city" id="selectedCityText">Noida <i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <ul class="dropdown-menu" id="cityDropdown">
+            <li data-city="Noida">Noida</li>
+            <li data-city="Greater Noida">Greater Noida</li>
+            <li data-city="Delhi NCR">Delhi NCR</li>
+            <li data-city="Gurgaon">Gurgaon</li>
+            <li data-city="Ghaziabad">Ghaziabad</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="nav-center">
+        <a href="index.html" class="nav-link highlight">Home</a>
+        <a href="packages.html" class="nav-link">Meal Boxes</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="cart.html" class="cart-icon-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+        <div class="user-pill">
+          <i class="fa-regular fa-circle-user"></i>
+          <div class="user-text">
+            <span class="greeting">Hi Guest</span>
+            <span class="auth-action">Login / Sign Up</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-carousel-section">
+    <div class="hero-unified-card" id="heroCarousel">
+      
+      <!-- Permanent Left Content -->
+      <div class="hero-static-content">
+        <span class="slide-tag pure-veg-tag">
+          <i class="fa-solid fa-leaf"></i> 100% CERTIFIED PURE VEG
+        </span>
+        <h1 class="slide-title">
+          India's First Pure Veg <br />
+          <span class="highlight-text">Online Catering Platform</span>
+        </h1>
+        <p class="slide-desc">
+          Precision-cut taste, authentic royal recipes, and airtight hygienic boxes curated for birthdays, get-togethers, and office sprints.
+        </p>
+        
+        <div class="hero-dual-cta">
+          <a href="packages.html" class="btn-hero-primary">
+            <span>Explore Our Packages</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/919876543210?text=Hi!%20I%20need%20an%20urgent%20catering%20quote." target="_blank" class="btn-hero-urgent">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contact Us for Urgent Quote</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Mascot Cover Showcase (Right Side) -->
+      <div class="hero-slider-stage hero-mascot-stage">
+        <div class="photo-slide active mascot-slide">
+          <img src="images/foodzoro-mascot.png" alt="FOOD ZORO Official Mascot Artwork" class="mascot-img" />
+        </div>
+        <div class="photo-slide">
+          <img src="images/zoro feast.png" alt="Zoro Feast Spread" />
+        </div>
+        <div class="photo-slide">
+          <img src="images/zoromix.png" alt="Zoro Mix Appetizers Box" />
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="carousel-btn prev" id="prevSlide" aria-label="Previous Slide">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="nextSlide" aria-label="Next Slide">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quick Tile Option: Top 3 Most Popular Packages -->
+  <section class="quick-packages-section">
+    <div class="quick-section-header">
+      <span class="quick-tag"><i class="fa-solid fa-fire"></i> CROWD FAVORITES</span>
+      <h2 class="quick-title">Most Popular <span class="highlight-text">Meal Box Drops</span></h2>
+      <p class="quick-subtitle">Hand-picked by over 5,000+ happy hosts across Delhi NCR. Tap to customize instantly.</p>
+    </div>
+
+    <div class="quick-tiles-grid">
+      <!-- Tile 1: Zoro Mix -->
+      <article class="quick-tile-card">
+        <div class="tile-img-wrap">
+          <img src="images/zoromix.png" alt="Zoro Mix" />
+          <span class="tile-badge badge-bestseller">⭐ #1 Bestseller</span>
+          <span class="tile-diet-badge"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+        </div>
+        <div class="tile-content">
+          <div class="tile-meta">
+            <h3 class="tile-name">Zoro Mix (Package 1)</h3>
+            <span class="tile-rating"><i class="fa-solid fa-star"></i> 4.9 (1.8k)</span>
+          </div>
+          <p class="tile-desc">3 Snacks (Tandoori/Chinese/Continental) + 1 Noodles + 1 Fried Rice + 1 Dessert.</p>
+          <div class="tile-footer">
+            <div class="tile-pricing">
+              <span class="tile-price-label">Starts at</span>
+              <span class="tile-price">₹299 <small>/ box</small></span>
+            </div>
+            <a href="packages.html" class="btn-tile-select">
+              <span>Select Box</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tile 2: Zoro Feast -->
+      <article class="quick-tile-card popular-highlight">
+        <div class="tile-img-wrap">
+          <img src="images/zoro feast.png" alt="Zoro Feast" />
+          <span class="tile-badge badge-signature">🔥 Signature Feast</span>
+          <span class="tile-diet-badge"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+        </div>
+        <div class="tile-content">
+          <div class="tile-meta">
+            <h3 class="tile-name">Zoro Feast (Package 5)</h3>
+            <span class="tile-rating"><i class="fa-solid fa-star"></i> 5.0 (3.2k)</span>
+          </div>
+          <p class="tile-desc">3 Snacks + 2 Indian Main Course Items + 3 Choices in Rice and Breads + 1 Dessert.</p>
+          <div class="tile-footer">
+            <div class="tile-pricing">
+              <span class="tile-price-label">Starts at</span>
+              <span class="tile-price">₹339 <small>/ box</small></span>
+            </div>
+            <a href="packages.html" class="btn-tile-select">
+              <span>Select Box</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tile 3: Desi Zoro -->
+      <article class="quick-tile-card">
+        <div class="tile-img-wrap">
+          <img src="images/desi zoro.png" alt="Desi Zoro" />
+          <span class="tile-badge badge-feast">👑 Royal Thali</span>
+          <span class="tile-diet-badge"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+        </div>
+        <div class="tile-content">
+          <div class="tile-meta">
+            <h3 class="tile-name">Desi Zoro (Package 4)</h3>
+            <span class="tile-rating"><i class="fa-solid fa-star"></i> 5.0 (2.5k)</span>
+          </div>
+          <p class="tile-desc">3 Indian Main Course Curries + 3 Choices in Rice & Breads + 1 Royal Dessert.</p>
+          <div class="tile-footer">
+            <div class="tile-pricing">
+              <span class="tile-price-label">Starts at</span>
+              <span class="tile-price">₹199 <small>/ box</small></span>
+            </div>
+            <a href="packages.html" class="btn-tile-select">
+              <span>Select Box</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Quick Footer CTA -->
+    <div class="quick-bottom-action">
+      <a href="packages.html" class="btn-explore-all">
+        <span>View All 6 Curated Packages</span>
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo footer-logo zoro-themed">
+          <div class="logo-text-group">
+            <span class="logo-text"><span class="logo-red">FOOD</span><span class="logo-white">ZORO</span></span>
+            <span class="sub-brand-tag footer-tag">BY PARTY PEHNAWA</span>
+          </div>
+        </a>
+        <p class="footer-text">India's dedicated pure-vegetarian catering platform. Fresh, hygienic meals packed hot to order.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Our Services</h4>
+        <ul class="footer-menu">
+          <li><a href="packages.html">Zoro Mix</a></li>
+          <li><a href="packages.html">Snack Attack</a></li>
+          <li><a href="packages.html">Desi Zoro Thali</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Quick Links</h4>
+        <ul class="footer-menu">
+          <li><a href="gallery.html">Our Packaging</a></li>
+          <li><a href="gallery.html">Testimonials</a></li>
+          <li><a href="packages.html">Pricing Configurator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Contact & Support</h4>
+        <p class="contact-line"><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p class="contact-line"><i class="fa-solid fa-envelope"></i> support@foodzoro.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 FOODZORO BY PARTY PEHNAWA. All Rights Reserved. 100% Pure Vegetarian Catering.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
